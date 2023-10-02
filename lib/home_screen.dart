@@ -1,4 +1,5 @@
 import 'package:exam_project/Screen2.dart';
+import 'package:exam_project/reusablecomponant.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -195,31 +196,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   SizedBox(
                     height: 15,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "Feature",
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold),
-                      ),
-                      Row(children: [
-                        Text(
-                          "see more",
-                          style: TextStyle(fontSize: 14, color: Colors.green),
-                        ),
-                        Icon(
-                          Icons.arrow_forward_ios,
-                          size: 15,
-                          color: Colors.green,
-                        ),
-                      ]),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
+                  ), 
+                 imoportantline(Colors.green, "Feature",  "see more"),
+                 
                   Container(
                     width: 326,height: 168,
                     child: CarouselSlider(
@@ -238,28 +217,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   SizedBox(
                     height: 15,
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "Exercise",
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold),
-                      ),
-                      Row(children: [
-                        Text(
-                          "see more",
-                         
-                          style: TextStyle(fontSize: 14, color: Colors.green),
-                        ),
-                        Icon(
-                          Icons.arrow_forward_ios,
-                          size: 15,
-                          color: Colors.green,
-                        ),
-                      ]),
-                    ],
-                  ),
+                    imoportantline(Colors.green, "Exercise",  "see more"),
+                 
                   SizedBox(
                     height: 15,
                   ),
